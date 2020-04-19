@@ -34,21 +34,21 @@ const Home = ({ data: gqlData }) => {
         flex lg:flex-row flex-col"
         >
           <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
-            <Tag year="2020" category="SOFAS" />
+            <Tag year="2020" category="BLINDS" />
             <Center
               price="200"
               title={inventory[2].name}
               link={slugify(inventory[2].name)}
             />
-            <Footer designer="Jason Bourne" />
+            <Footer designer="Aglora Solutions" />
           </div>
           <div className="flex flex-1 justify-center items-center relative">
             <Showcase imageSrc={inventory[2].image} />
-            <div
+            {/* <div
               className="absolute
               w-68 h-28 sm:w-72 sm:h-72 xl:w-88 xl:h-88
               bg-white z-0 rounded-full"
-            />
+            /> */}
           </div>
         </div>
       </div>

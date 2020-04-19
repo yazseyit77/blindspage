@@ -11,13 +11,7 @@ module.exports = {
         component: require.resolve(`./src/layouts/baseLayout.js`),
       },
     },
-    {
-      resolve: "gatsby-plugin-snipcartv3",
-      options: {
-        apiKey:
-          "Zjk4OTkxYTMtNjdiOS00YWJjLWIxNDQtODNjYTg0Y2RlNzU0NjM3MjI4Mzk2NTMyODE1OTEz",
-      },
-    },
+
     `gatsby-plugin-stripe`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,

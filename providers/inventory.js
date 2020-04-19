@@ -3,7 +3,7 @@ import uuid from "uuid/v4"
 let inventory = [
   {
     categories: ["new arrivals"],
-    name: "Timber Gray Sofa",
+    name: "1inch Economy Cordless Mini Blinds",
     price: "1000",
     image: "../images/img/2.jpg",
     description:
@@ -12,8 +12,8 @@ let inventory = [
     currentInventory: 4,
   },
   {
-    categories: ["sofas", "living room"],
-    name: "Carmel Brown Sofa",
+    categories: ["blinds", "living room"],
+    name: "2inch Quick Ship Cordless Faux Wood Blinds",
     price: "1000",
     image: "../images/products/couch5.png",
     description:
@@ -22,8 +22,8 @@ let inventory = [
     currentInventory: 2,
   },
   {
-    categories: ["new arrivals", "sofas"],
-    name: "Mod Leather Sofa",
+    categories: ["new arrivals", "blinds"],
+    name: "Premier Blinds",
     price: "800",
     image: "../images/img/3.jpg",
     description:
@@ -32,8 +32,8 @@ let inventory = [
     currentInventory: 8,
   },
   {
-    categories: ["new arrivals", "sofas"],
-    name: "Thetis Gray Love Seat",
+    categories: ["new arrivals", "blinds"],
+    name: "Cordless 2inch Classic Faux Woods",
     price: "900",
     image: "../images/img/4.jpg",
     description:
@@ -42,8 +42,8 @@ let inventory = [
     currentInventory: 10,
   },
   {
-    categories: ["on sale", "sofas"],
-    name: "Sven Tan Matte",
+    categories: ["on sale", "blinds"],
+    name: "Signature Faux Wood Blinds",
     price: "1200",
     image: "../images/products/couch8.png",
     description:
@@ -52,8 +52,8 @@ let inventory = [
     currentInventory: 7,
   },
   {
-    categories: ["on sale", "sofas"],
-    name: "Otis Malt Sofa",
+    categories: ["on sale", "blinds"],
+    name: "Premier Mini Blinds",
     price: "500",
     image: "../images/products/couch9.png",
     description:
@@ -62,8 +62,8 @@ let inventory = [
     currentInventory: 13,
   },
   {
-    categories: ["on sale", "sofas"],
-    name: "Ceni Brown 3 Seater",
+    categories: ["on sale", "blinds"],
+    name: "Cordless Mini Blinds",
     price: "650",
     image: "../images/products/couch10.png",
     description:
@@ -72,8 +72,8 @@ let inventory = [
     currentInventory: 9,
   },
   {
-    categories: ["sofas", "living room"],
-    name: "Jameson Jack Lounger",
+    categories: ["blinds", "living room"],
+    name: "Signature Faux Wood Blinds",
     price: "1230",
     image: "../images/products/couch11.png",
     description:
@@ -83,7 +83,7 @@ let inventory = [
   },
 
   {
-    categories: ["sofas"],
+    categories: ["blinds"],
     name: "Galaxy Blue Sofa",
     price: "800",
     image: "../images/products/couch2.png",
@@ -93,8 +93,8 @@ let inventory = [
     currentInventory: 43,
   },
   {
-    categories: ["new arrivals", "sofas"],
-    name: "Markus Green Love Seat",
+    categories: ["new arrivals", "blinds"],
+    name: "Premier Painted Basswood Blinds",
     price: "900",
     image: "../images/img/5.jpg",
     description:
@@ -103,8 +103,8 @@ let inventory = [
     currentInventory: 2,
   },
   {
-    categories: ["on sale", "sofas"],
-    name: "Dabit Matte Black",
+    categories: ["on sale", "blinds"],
+    name: "Classic Vertical Blinds",
     price: "1200",
     image: "../images/products/couch4.png",
     description:
@@ -113,8 +113,8 @@ let inventory = [
   },
 
   {
-    categories: ["on sale", "chairs"],
-    name: "Embrace Blue",
+    categories: ["on sale", "curtains"],
+    name: "Aluminum Horizontal Blind",
     price: "300",
     image: "../images/products/chair1.png",
     description:
@@ -123,8 +123,8 @@ let inventory = [
     currentInventory: 12,
   },
   {
-    categories: ["on sale", "chairs"],
-    name: "Nord Lounger",
+    categories: ["on sale", "curtains"],
+    name: "Springfield Fabric Vertical Blinds",
     price: "825",
     image: "../images/products/chair2.png",
     description:
@@ -133,8 +133,8 @@ let inventory = [
     currentInventory: 13,
   },
   {
-    categories: ["on sale", "chairs"],
-    name: "Ceni Matte Oranve",
+    categories: ["on sale", "curtains"],
+    name: "Faux Wood Grain Vertical Blinds",
     price: "720",
     image: "../images/products/chair3.png",
     description:
@@ -143,8 +143,8 @@ let inventory = [
     currentInventory: 33,
   },
   {
-    categories: ["on sale", "chairs"],
-    name: "Abisko Green Recliner",
+    categories: ["on sale", "curtains"],
+    name: "Faux Woodtone Vertical Blinds",
     price: "2000",
     image: "../images/products/chair4.png",
     description:
@@ -153,8 +153,8 @@ let inventory = [
     currentInventory: 23,
   },
   {
-    categories: ["on sale", "chairs"],
-    name: "Denim on Denim Single",
+    categories: ["on sale", "curtains"],
+    name: "Cordless Premier Faux Wood Blinds",
     price: "1100",
     image: "../images/products/chair5.png",
     description:
@@ -163,8 +163,8 @@ let inventory = [
     currentInventory: 13,
   },
   {
-    categories: ["on sale", "chairs"],
-    name: "Levo Tan Lounge Chair",
+    categories: ["on sale", "curtains"],
+    name: "The Albany Collection",
     price: "600",
     image: "../images/products/chair6.png",
     description:
@@ -174,8 +174,8 @@ let inventory = [
   },
 
   {
-    categories: ["on sale", "chairs"],
-    name: "Anime Tint Recliner",
+    categories: ["on sale", "curtains"],
+    name: "Cordless Signature Faux Wood Blinds",
     price: "775",
     image: "../images/products/chair7.png",
     description:
@@ -184,8 +184,8 @@ let inventory = [
     currentInventory: 44,
   },
   {
-    categories: ["on sale", "chairs"],
-    name: "Josh Jones Red Chair",
+    categories: ["on sale", "curtains"],
+    name: "The Hartford Collection ",
     price: "1200",
     image: "../images/products/chair8.png",
     description:
@@ -194,8 +194,8 @@ let inventory = [
     currentInventory: 17,
   },
   {
-    categories: ["on sale", "chairs"],
-    name: "Black Sand Lounge",
+    categories: ["on sale", "curtains"],
+    name: "S Curve Verticals",
     price: "1600",
     image: "../images/products/chair9.png",
     description:
@@ -204,8 +204,8 @@ let inventory = [
     currentInventory: 28,
   },
   {
-    categories: ["on sale", "chairs"],
-    name: "Mint Beige Workchair",
+    categories: ["on sale", "curtains"],
+    name: "The Sacramento Collection",
     price: "550",
     image: "../images/products/chair10.png",
     description:
