@@ -1,14 +1,21 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby JAMstack ECommerce Professional`,
-    description: `Get up and running with your next E Commerce Website.`,
-    author: `@dabit3`,
+    title: `Blinds`,
+    description: `eCommerce Website for a startup company`,
+    author: `@yaz`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve(`./src/layouts/baseLayout.js`),
+      },
+    },
+    {
+      resolve: "gatsby-plugin-snipcartv3",
+      options: {
+        apiKey:
+          "Zjk4OTkxYTMtNjdiOS00YWJjLWIxNDQtODNjYTg0Y2RlNzU0NjM3MjI4Mzk2NTMyODE1OTEz",
       },
     },
     `gatsby-plugin-stripe`,
