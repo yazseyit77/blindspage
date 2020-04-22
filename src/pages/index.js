@@ -14,6 +14,10 @@ import { titleIfy, slugify } from "../../utils/helpers"
 
 import { graphql } from "gatsby"
 
+import Carousel, { Dots } from "@brainhubeu/react-carousel"
+import "@brainhubeu/react-carousel/lib/style.css"
+import Icon from "react-fa"
+
 const Home = ({ data: gqlData }) => {
   const {
     inventoryInfo,
@@ -22,35 +26,56 @@ const Home = ({ data: gqlData }) => {
   const categories = data.slice(0, 2)
   const inventory = inventoryInfo.data.slice(0, 4)
 
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      partialVisibilityGutter: 40, // this is needed to tell the amount of px that should be visible.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 3 },
+      items: 2,
+      partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+    },
+    mobile: {
+      breakpoint: { max: 375, min: 0 },
+      items: 1,
+      partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+    },
+  }
+
   return (
     <>
       <CartLink />
       <SEO title="Home" />
-      <div className="w-full">
-        <div
-          className="bg-green-200
-        lg:h-hero
-        p-6 pb-10 smpb-6
-        flex lg:flex-row flex-col"
+      <div className="w-full" style={{ marginTop: "50px" }}>
+        <Carousel
+          autoPlay={3000}
+          animationSpeed={2000}
+          infinite
+          dots
+          centered
+          responsive={responsive}
         >
-          <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
-            <Tag year="2020" category="BLINDS" />
-            <Center
-              price="200"
-              title={inventory[2].name}
-              link={slugify(inventory[2].name)}
-            />
-            <Footer designer="Aglora Solutions" />
-          </div>
-          <div className="flex flex-1 justify-center items-center relative">
-            <Showcase imageSrc={inventory[2].image} />
-            {/* <div
-              className="absolute
-              w-68 h-28 sm:w-72 sm:h-72 xl:w-88 xl:h-88
-              bg-white z-0 rounded-full"
-            /> */}
-          </div>
-        </div>
+          <img
+            style={{ width: "100%" }}
+            src={
+              "https://images.unsplash.com/photo-1527030126234-095ace44080f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=10"
+            }
+          />
+          <img
+            style={{ width: "100%" }}
+            src={
+              "https://images.unsplash.com/photo-1472232533367-7fea57261049?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=10"
+            }
+          />
+          <img
+            style={{ width: "100%" }}
+            src={
+              "https://images.unsplash.com/photo-1459433312032-29eb4bea7d3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80"
+            }
+          />
+        </Carousel>
       </div>
       <div className="my-4 lg:my-8 flex flex-col lg:flex-row justify-between">
         <DisplayMedium
