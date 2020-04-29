@@ -1,7 +1,6 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import Slider from "../components/Carousel"
 import {
   Center,
   Footer,
@@ -59,19 +58,19 @@ const Home = ({ data: gqlData }) => {
           responsive={responsive}
         >
           <img
-            style={{ height: "700px", width: "100%" }}
+            style={{ height: "700px", width: "105%" }}
             src={
               "https://images.unsplash.com/photo-1527030126234-095ace44080f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=10"
             }
           />
           <img
-            style={{ height: "700px", width: "100%" }}
+            style={{ height: "700px", width: "105%" }}
             src={
               "https://images.unsplash.com/photo-1472232533367-7fea57261049?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=10"
             }
           />
           <img
-            style={{ height: "700px", width: "100%" }}
+            style={{ height: "700px", width: "105%" }}
             src={
               "https://images.unsplash.com/photo-1459433312032-29eb4bea7d3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80"
             }

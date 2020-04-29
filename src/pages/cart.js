@@ -73,12 +73,6 @@ const Cart = ({ context }) => {
           </div>
           {!cartEmpty && (
             <div className="flex flex-1 justify-end">
-              {/* <script src="https://www.paypal.com/sdk/js?client-id=AVtMrJCpZ172BrO2RgyJKYY5BZXgdgPc-gDFHmCZAq_kHpNB1d3nB0k0tIkerM8SfPWI4p14dJMSeyhV"></script>
-              <div id="paypal-button-container"></div>
-              <script>
-                paypal.Buttons().render('#paypal-button-container'); // This
-                function displays Smart Payment Buttons on your web page.
-              </script> */}
               {/* <div className="cursor-pointer flex">
                 <a
                   className="text-gray-600 text-sm mr-2"
