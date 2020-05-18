@@ -17,7 +17,7 @@ import { loadStripe } from "@stripe/stripe-js"
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
-const stripePromise = loadStripe("pk_test_DvXwcKnVaaZUpWJIbh9cjgZr00IjIAjZAA")
+const stripePromise = loadStripe("pk_test_JkfokqC9GaFWPuM4yM8o3Uuz008siHZrTr")
 
 function CheckoutWithContext(props) {
   return (

@@ -14,7 +14,7 @@ import { titleIfy, slugify } from "../../utils/helpers"
 
 import { graphql } from "gatsby"
 
-import Carousel, { Dots } from "@brainhubeu/react-carousel"
+import Carousel, { dots } from "@brainhubeu/react-carousel"
 import "@brainhubeu/react-carousel/lib/style.css"
 import Icon from "react-fa"
 
@@ -53,8 +53,9 @@ const Home = ({ data: gqlData }) => {
           autoPlay={3000}
           animationSpeed={2000}
           infinite
+          arrows
           dots
-          centered
+          keepDirectionWhenDragging
           responsive={responsive}
         >
           <img
