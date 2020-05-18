@@ -718,3 +718,22 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+#arrow {
+  font-size: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: tomato;
+}
+
+#slider {
+  margin-top: 10px !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+#sliderImage {
+  height: 700px;
+  width: 100%;
+}
