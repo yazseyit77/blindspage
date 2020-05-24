@@ -1,24 +1,18 @@
 import React from "react"
 
 import SEO from "../components/seo"
-import {
-  Center,
-  Footer,
-  Tag,
-  Showcase,
-  DisplaySmall,
-  DisplayMedium,
-} from "../components"
+import { DisplaySmall } from "../components"
 import CartLink from "../components/CartLink"
 import { titleIfy, slugify } from "../../utils/helpers"
 
 // import { graphql } from "gatsby"
 
-import Carousel from "../components/Carousel"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-// import Carousel, { dots } from "@brainhubeu/react-carousel"
-// import "@brainhubeu/react-carousel/lib/style.css"
-// import Icon from "react-fa"
+// import Carousel from "../components/Carousel"
+import Review from "../components/CarouselReview"
+
+import Carousel, { dots } from "@brainhubeu/react-carousel"
+import "@brainhubeu/react-carousel/lib/style.css"
+import Icon from "react-fa"
 
 const Home = ({ data: gqlData }) => {
   const {
@@ -28,23 +22,23 @@ const Home = ({ data: gqlData }) => {
   const categories = data.slice(0, 2)
   const inventory = inventoryInfo.data.slice(0, 20)
 
-  // const responsive = {
-  //   desktop: {
-  //     breakpoint: { max: 3000, min: 1024 },
-  //     items: 3,
-  //     partialVisibilityGutter: 40, // this is needed to tell the amount of px that should be visible.
-  //   },
-  //   tablet: {
-  //     breakpoint: { max: 1024, min: 3 },
-  //     items: 2,
-  //     partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
-  //   },
-  //   mobile: {
-  //     breakpoint: { max: 375, min: 0 },
-  //     items: 1,
-  //     partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
-  //   },
-  // }
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      partialVisibilityGutter: 40, // this is needed to tell the amount of px that should be visible.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 3 },
+      items: 2,
+      partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+    },
+    mobile: {
+      breakpoint: { max: 375, min: 0 },
+      items: 1,
+      partialVisibilityGutter: 30, // this is needed to tell the amount of px that should be visible.
+    },
+  }
 
   return (
     <>
@@ -52,8 +46,9 @@ const Home = ({ data: gqlData }) => {
       <SEO title="Home" />
 
       <div className="w-full" id="slider">
-        <Carousel />
-        {/* <Carousel
+        {/* <Carousel /> */}
+        <br />
+        <Carousel
           autoPlay={3000}
           animationSpeed={2000}
           infinite
@@ -82,7 +77,7 @@ const Home = ({ data: gqlData }) => {
               "https://images.unsplash.com/photo-1459433312032-29eb4bea7d3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80"
             }
           />
-        </Carousel> */}
+        </Carousel>
       </div>
       <div className="pt-10 pb-6 flex flex-col items-center bg-transparent">
         <h2 className="text-4xl mb-3">Trending Now</h2>
@@ -150,6 +145,7 @@ const Home = ({ data: gqlData }) => {
           link={slugify(inventory[8].name)}
         />
       </div>
+      <Review />
     </>
   )
 }
