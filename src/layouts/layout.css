@@ -733,7 +733,6 @@ pre tt:after {
   padding-left: 0 !important;
 }
 
-#sliderImage {
-  height: 700px;
-  width: 100%;
-}
+/* #sliderImage {
+  height: 800px;
+} */
