@@ -3,7 +3,7 @@ import uuid from "uuid/v4"
 let inventory = [
   {
     categories: ["new arrivals"],
-    name: "1inch Economy Cordless Mini Blinds",
+    name: "Double Sheer Zebra",
     price: "1000",
     image: "../images/img/2.jpg",
     description:
@@ -13,7 +13,7 @@ let inventory = [
   },
   {
     categories: ["blinds", "new arrivals"],
-    name: "2inch Quick Ship Cordless Faux Wood Blinds",
+    name: "Roller Shades",
     price: "1000",
     image: "../images/img/6.jpg",
     description:
@@ -23,7 +23,7 @@ let inventory = [
   },
   {
     categories: ["new arrivals", "blinds"],
-    name: "Premier Blinds",
+    name: "Vinyl Blackout",
     price: "800",
     image: "../images/img/3.jpg",
     description:
@@ -33,7 +33,7 @@ let inventory = [
   },
   {
     categories: ["new arrivals", "blinds"],
-    name: "Cordless 2inch Classic Faux Woods",
+    name: "Custom Designed Shades",
     price: "900",
     image: "../images/img/4.jpg",
     description:
@@ -43,7 +43,7 @@ let inventory = [
   },
   {
     categories: ["new arrivals", "blinds"],
-    name: "Signature Faux Wood Blinds",
+    name: "Custom Designed Zebra Blinds",
     price: "1200",
     image: "../images/img/7.jpg",
     description:
@@ -53,7 +53,7 @@ let inventory = [
   },
   {
     categories: ["blinds"],
-    name: "Premier Mini Blinds",
+    name: "Screen",
     price: "500",
     image: "../images/img/8.jpg",
     description:
@@ -63,7 +63,7 @@ let inventory = [
   },
   {
     categories: ["new arrivals", "blinds"],
-    name: "Cordless Mini Blinds",
+    name: "Motorized Shades",
     price: "650",
     image: "../images/img/21.jpg",
     description:
@@ -73,7 +73,7 @@ let inventory = [
   },
   {
     categories: ["blinds", "new arrivals"],
-    name: "Signature Faux Wood Blinds",
+    name: "Custom Printed Blinds",
     price: "1230",
     image: "../images/img/9.jpg",
     description:
@@ -84,7 +84,7 @@ let inventory = [
 
   {
     categories: ["blinds"],
-    name: "Faux blinds",
+    name: "Vertical Fabric blinds",
     price: "800",
     image: "../images/img/10.jpg",
     description:

@@ -1,6 +1,7 @@
 import React from "react"
 import Slider from "react-animated-slider"
 import horizontalCss from "react-animated-slider/build/horizontal.css"
+import { FaShoppingCart, FaCircle } from "react-icons/fa"
 import "normalize.css/normalize.css"
 import "../styles/slider-animations.css"
 import "../styles/styles.css"
