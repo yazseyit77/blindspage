@@ -44,10 +44,11 @@ class Layout extends React.Component {
             })
 
             links.unshift({ name: "Home", link: "/" })
+            links.push({ name: "About", link: "/about" })
             return (
-              <div className="min-h-screen">
+              <div className="min-h-full">
                 <nav>
-                  <div className="flex justify-center bg-gray-200">
+                  <div className="flex justify-center bg-black">
                     <div
                       className="
                     w-fw
@@ -57,7 +58,7 @@ class Layout extends React.Component {
                     >
                       <Link to="/">
                         <img
-                          style={{ borderRadius: "10px" }}
+                          style={{ borderRadius: "5px" }}
                           className="mb-4 w-32 mw-24 sm:w-30 sm:mr-16"
                           alt="Logo"
                           src={logo}
@@ -68,7 +69,7 @@ class Layout extends React.Component {
                           <Link to={l.link} key={i}>
                             <p
                               key={i}
-                              className="text-left m-0 text-sm mr-4 sm:mr-8 font-semibold"
+                              className="text-left m-0 text-sm mr-4 sm:mr-8 font-semibold text-blue-200"
                             >
                               {l.name}
                             </p>

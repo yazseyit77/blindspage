@@ -10,7 +10,7 @@ const DisplaySmall = ({ link, title, subtitle, imageSrc }) => (
   hover:bg-light-200 lg:mb-0 mb-4"
   >
     <Link to={`/${link}`}>
-      <div className="flex flex-column justify-center items-center h-32">
+      <div className="flex flex-column justify-center items-center h-32 ">
         <Image alt={title} src={imageSrc} className="w-4/5" />
       </div>
       <div className="">

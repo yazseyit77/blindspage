@@ -84,7 +84,7 @@ let inventory = [
 
   {
     categories: ["blinds"],
-    name: "Vertical Fabric blinds",
+    name: "Vertical Fabric Blinds",
     price: "800",
     image: "../images/img/10.jpg",
     description:
@@ -94,7 +94,7 @@ let inventory = [
   },
   {
     categories: ["new arrivals", "blinds"],
-    name: "Premier Painted Basswood Blinds",
+    name: "Double Roller Blind",
     price: "900",
     image: "../images/img/5.jpg",
     description:
@@ -104,7 +104,7 @@ let inventory = [
   },
   {
     categories: ["blinds"],
-    name: "Classic Vertical Blinds",
+    name: "Blind Curtain",
     price: "1200",
     image: "../images/img/11.jpg",
     description:
@@ -114,7 +114,7 @@ let inventory = [
 
   {
     categories: ["on sale"],
-    name: "Aluminum Horizontal Blind",
+    name: "Wooden Blind Curtain",
     price: "300",
     image: "../images/img/12.jpg",
     description:

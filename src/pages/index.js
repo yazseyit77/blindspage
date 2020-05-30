@@ -49,8 +49,8 @@ const Home = ({ data: gqlData }) => {
         {/* <Carousel /> */}
         <br />
         <Carousel
-          autoPlay={3000}
-          animationSpeed={2000}
+          autoPlay={5000}
+          animationSpeed={3000}
           infinite
           arrowLeft={<Icon name="angle-left" id="arrow" />}
           arrowRight={<Icon name="angle-right" id="arrow" />}
@@ -59,24 +59,35 @@ const Home = ({ data: gqlData }) => {
           keepDirectionWhenDragging
           responsive={responsive}
         >
-          <img
-            id="sliderImage"
-            src={
-              "https://images.unsplash.com/photo-1527030126234-095ace44080f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=10"
-            }
-          />
-          <img
-            id="sliderImage"
-            src={
-              "https://images.unsplash.com/photo-1472232533367-7fea57261049?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=10"
-            }
-          />
-          <img
-            id="sliderImage"
-            src={
-              "https://images.unsplash.com/photo-1459433312032-29eb4bea7d3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80"
-            }
-          />
+          <>
+            <img
+              id="sliderImage"
+              src={
+                "https://images.unsplash.com/photo-1527030126234-095ace44080f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=10"
+              }
+            />
+            <div class="text">
+              We measure, design and install premium window coverings for you
+            </div>
+          </>
+          <>
+            <img
+              id="sliderImage"
+              src={
+                "https://images.unsplash.com/photo-1472232533367-7fea57261049?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=10"
+              }
+            />
+            <div class="text">We decorate European style at its best</div>
+          </>
+          <>
+            <img
+              id="sliderImage"
+              src={
+                "https://images.unsplash.com/photo-1459433312032-29eb4bea7d3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80"
+              }
+            />
+            <div class="text">High quality blinds with competitive prices</div>
+          </>
         </Carousel>
       </div>
       <div className="pt-10 pb-6 flex flex-col items-center bg-transparent">

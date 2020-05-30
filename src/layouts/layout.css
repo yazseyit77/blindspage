@@ -736,3 +736,13 @@ pre tt:after {
   height: 800px;
   width: 100%;
 }
+
+.text {
+  color: rgb(29, 116, 135);
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+}
