@@ -737,8 +737,31 @@ pre tt:after {
   width: 100%;
 }
 
-.text {
-  color: rgb(29, 116, 135);
+.text1 {
+  color: rgb(197, 198, 197);
+  background-color: #000;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.text2 {
+  color: rgb(22, 30, 86);
+  background-color: rgb(197, 198, 197);
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.text3 {
+  color: rgb(197, 198, 197);
+  background-color: #000;
   font-size: 25px;
   padding: 8px 12px;
   position: absolute;

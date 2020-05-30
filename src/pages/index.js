@@ -47,7 +47,7 @@ const Home = ({ data: gqlData }) => {
 
       <div className="w-full" id="slider">
         {/* <Carousel /> */}
-        <br />
+
         <Carousel
           autoPlay={5000}
           animationSpeed={3000}
@@ -66,7 +66,7 @@ const Home = ({ data: gqlData }) => {
                 "https://images.unsplash.com/photo-1527030126234-095ace44080f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=10"
               }
             />
-            <div class="text">
+            <div class="text1">
               We measure, design and install premium window coverings for you
             </div>
           </>
@@ -77,7 +77,7 @@ const Home = ({ data: gqlData }) => {
                 "https://images.unsplash.com/photo-1472232533367-7fea57261049?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=10"
               }
             />
-            <div class="text">We decorate European style at its best</div>
+            <div class="text2">We decorate European style at its best</div>
           </>
           <>
             <img
@@ -86,7 +86,7 @@ const Home = ({ data: gqlData }) => {
                 "https://images.unsplash.com/photo-1459433312032-29eb4bea7d3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1046&q=80"
               }
             />
-            <div class="text">High quality blinds with competitive prices</div>
+            <div class="text3">High quality blinds with competitive prices</div>
           </>
         </Carousel>
       </div>
