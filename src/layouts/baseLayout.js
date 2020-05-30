@@ -44,7 +44,10 @@ class Layout extends React.Component {
             })
 
             links.unshift({ name: "Home", link: "/" })
-            links.push({ name: "About", link: "/about" })
+            links.push(
+              { name: "About", link: "/about" },
+              { name: "Contact", link: "/contact" }
+            )
             return (
               <div className="min-h-full">
                 <nav>
