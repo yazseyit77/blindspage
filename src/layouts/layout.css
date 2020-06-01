@@ -594,13 +594,13 @@ ul li {
   padding-left: 0;
 }
 
-li>ol {
+li > ol {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
 
-li>ul {
+li > ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
@@ -618,7 +618,7 @@ p *:last-child {
   margin-bottom: 0;
 }
 
-li>p {
+li > p {
   margin-bottom: calc(1.45rem / 2);
 }
 
@@ -718,7 +718,6 @@ pre tt:after {
   }
 }
 
-
 #arrow {
   font-size: 50px;
   margin-right: 10px;
@@ -771,4 +770,8 @@ pre tt:after {
   align-items: center;
   margin: auto;
   max-width: 80%;
+}
+
+.strong {
+  margin-left: 20px;
 }

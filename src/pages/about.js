@@ -30,9 +30,18 @@ class About extends React.Component {
           </div>
           <address class="address">
             <ul>
-              <li>Phone Number: N/A</li>
-              <li>Location Address: 3040 118th Ave SE, Bellevue, WA 98005</li>
-              <li>Email Address: info@mer-ak.com</li>
+              <li>
+                Phone: <strong className="strong">+1 (206) 619-9181</strong>
+              </li>
+              <li>
+                Address:{" "}
+                <strong className="strong">
+                  3040 118th Ave SE, Bellevue, WA 98005
+                </strong>
+              </li>
+              <li>
+                Email: <strong className="strong">info@mer-ak.com</strong>
+              </li>
             </ul>
           </address>
         </div>
