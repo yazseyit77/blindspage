@@ -765,3 +765,10 @@ pre tt:after {
 .carousel:hover .slide .text1 {
   opacity: 1;
 }
+
+.address {
+  text-align: justify;
+  align-items: center;
+  margin: auto;
+  max-width: 80%;
+}
