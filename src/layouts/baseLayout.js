@@ -98,7 +98,19 @@ class Layout extends React.Component {
                 <footer className="flex justify-center">
                   <div className="flex w-fw px-8 desktop:px-0 border-solid border-t border-gray-300 items-center">
                     <span className="block text-blue-800 pt-4 pb-8 mt-2 text-xs">
-                      Copyright © 2020 Blinds. All rights reserved.
+                      Copyright © 2020 Blinds. All rights reserved. |
+                    </span>
+                    <span
+                      className="block text-blue-800 pt-4 pb-8 mt-2 text-xs"
+                      style={{ paddingLeft: 5 }}
+                    >
+                      Privacy Policy |
+                    </span>
+                    <span
+                      className="block text-blue-800 pt-4 pb-8 mt-2 text-xs"
+                      style={{ paddingLeft: 5 }}
+                    >
+                      FAQ
                     </span>
                     {/* <div className="flex flex-1 justify-end">
                       <Link to="/admin">

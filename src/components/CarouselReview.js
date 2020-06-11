@@ -1,61 +1,92 @@
 import React from "react"
-import Slider from "react-animated-slider"
-import horizontalCss from "react-animated-slider/build/horizontal.css"
-import { FaShoppingCart, FaCircle } from "react-icons/fa"
-import "normalize.css/normalize.css"
-import "../styles/slider-animations.css"
-import "../styles/styles.css"
+// import Swipeable from "react-swipeable"
 
-const content = [
-  {
-    title: "Really happy with the installation",
-    description:
-      "Classy Blinds in US, definitely the best. The service is great and fast! All at reasonable prices so what else can you ask for? Really happy with the installation and how it turned out. ",
-    // button: "Read More",
-    image:
-      "https://images.unsplash.com/photo-1528502043423-9149c2023296?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80",
-    user: "Rita Bennet",
-  },
-  {
-    title: "They are beautiful, unique, and operate perfectly",
-    description:
-      "We loved the Zebra blinds so much that we had them installed throughout our home. They are beautiful, unique, and operate perfectly. The customer service was excellent. Frank and his team couldn't have been better!!",
-    // button: "Discover",
-    image:
-      "https://images.unsplash.com/photo-1520046345720-d62f2019926b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-    user: "Lanice Lyon",
-  },
-  {
-    title: "They look sleek and modern",
-    description:
-      "They look sleek and modern. Beautiful woven fabric is low maintenance with the option of sheer to full-coverage.  Very versatile and a world better than blinds. So much more affordable, I couldn’t believe it. Also the mechanisms is sturdy and easy to use. My whole house was done in a couple of hours. Straight from Europe and custom made.",
-    // button: "Buy now",
-    image:
-      "https://images.unsplash.com/photo-1534304210138-25219c7d0544?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80",
-    user: "Laura Enriquez",
-  },
-]
+const IMG_1 = `Lorem`
+const IMG_2 = `Ipsum`
+const IMG_3 = `https://unsplash.it/342/251`
+const IMG_4 = `https://unsplash.it/342/252`
+const IMG_5 = `https://unsplash.it/342/253`
+const IMAGES = [IMG_1, IMG_2, IMG_3, IMG_4, IMG_5]
+const IMG_WIDTH = "342px"
+const IMG_HEIGHT = "249px"
 
-const Review = () => (
-  <div>
-    <Slider autoplay={2000} classNames={horizontalCss}>
-      {content.map((item, index) => (
+const RIGHT = "-1"
+const LEFT = "+1"
+
+const buttonStyles = {
+  height: IMG_HEIGHT,
+  color: "#eeeeee",
+  fontSize: "2em",
+}
+
+class SimpleCarousel extends React.Component {
+  constructor(props, context) {
+    super(props, context)
+    this.state = { imageIdx: 0 }
+  }
+
+  onSwiped(direction) {
+    const change = direction === RIGHT ? RIGHT : LEFT
+    const adjustedIdx = this.state.imageIdx + Number(change)
+    let newIdx
+    if (adjustedIdx >= IMAGES.length) {
+      newIdx = 0
+    } else if (adjustedIdx < 0) {
+      newIdx = IMAGES.length - 1
+    } else {
+      newIdx = adjustedIdx
+    }
+    this.setState({ imageIdx: newIdx })
+  }
+
+  render() {
+    const { imageIdx = 0 } = this.state
+    const imageStyles = {
+      width: IMG_WIDTH,
+      height: IMG_HEIGHT,
+      backgroundImage: `url(${IMAGES[imageIdx]})`,
+    }
+    return (
+      <div className="swipeContainer">
+        <div>Image: {imageIdx + 1}</div>
         <div
-          key={index}
-          className="slider-content"
-          style={{ background: `url('${item.image}') no-repeat center center` }}
+          className="swipe"
+          trackMouse
+          style={{ touchAction: "none" }}
+          preventDefaultTouchmoveEvent
+          onSwipedLeft={() => this.onSwiped(LEFT)}
+          onSwipedRight={() => this.onSwiped(RIGHT)}
         >
-          <div className="inner">
-            <h1>{item.title}</h1>
-            <p>{item.description}</p>
-            <p>
-              Posted by <strong>{item.user}</strong>
-            </p>
+          <div style={imageStyles}>
+            <button
+              onClick={() => this.onSwiped(RIGHT)}
+              className="hollow float-left"
+              style={buttonStyles}
+            >
+              ⇦
+            </button>
+            <button
+              onClick={() => this.onSwiped(LEFT)}
+              className="hollow float-right"
+              style={buttonStyles}
+            >
+              ⇨
+            </button>
           </div>
         </div>
-      ))}
-    </Slider>
-  </div>
-)
+      </div>
+    )
+  }
+}
 
-export default Review
+export default SimpleCarousel
+
+function preload(...images) {
+  return images.reduce((acc, img) => {
+    let newImage = new Image()
+    newImage.src = img
+    acc.push(newImage)
+    return acc
+  }, [])
+}
+preload.apply(null, IMAGES)

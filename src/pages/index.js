@@ -8,7 +8,6 @@ import { titleIfy, slugify } from "../../utils/helpers"
 import { graphql } from "gatsby"
 
 import Carousel from "../components/Carousel"
-// import Review from "../components/CarouselReview"
 // import MyCarousel from "../components/CarouselBrain"
 
 const Home = ({ data: gqlData }) => {
@@ -94,7 +93,6 @@ const Home = ({ data: gqlData }) => {
           link={slugify(inventory[8].name)}
         />
       </div>
-      {/* <Review /> */}
     </>
   )
 }

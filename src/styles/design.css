@@ -1,0 +1,47 @@
+.image-slide {
+    height: 100%;
+    width: 100%;
+    transition: background-image .3s ease-in-out;
+}
+
+.slide-arrow {
+    color: #14B6D4;
+    cursor: pointer;
+    font-size: 2rem;
+    position: fixed;
+    top: 50%;
+}
+
+.slide-arrow.right {
+    right: 1rem;
+}
+
+.slide-arrow.left {
+    left: 1rem;
+}
+
+
+.swipeContainer {
+    padding: 1em;
+
+}
+
+.swipe {
+    display: inline-block;
+    border: 2px solid gray;
+    padding: 5px;
+}
+
+.hollow {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.float-right {
+    float: right !important;
+}
+
+.float-left {
+    float: left !important;
+}
