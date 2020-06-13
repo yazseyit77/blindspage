@@ -100,18 +100,22 @@ class Layout extends React.Component {
                     <span className="block text-blue-800 pt-4 pb-8 mt-2 text-xs">
                       Copyright © 2020 Blinds. All rights reserved. |
                     </span>
-                    <span
-                      className="block text-blue-800 pt-4 pb-8 mt-2 text-xs"
+                    <div
+                      className="flex flex-1 flex-start;"
                       style={{ paddingLeft: 5 }}
                     >
-                      Privacy Policy |
-                    </span>
-                    <span
-                      className="block text-blue-800 pt-4 pb-8 mt-2 text-xs"
-                      style={{ paddingLeft: 5 }}
-                    >
-                      FAQ
-                    </span>
+                      <Link to="/faq">
+                        <p className="pt-4 text-xs text-blue-600">FAQ | </p>
+                      </Link>
+                      <Link to="/privacy">
+                        <p
+                          className="pt-4 text-xs text-blue-600"
+                          style={{ paddingLeft: 5 }}
+                        >
+                          Privacy Policy
+                        </p>
+                      </Link>
+                    </div>
                     {/* <div className="flex flex-1 justify-end">
                       <Link to="/admin">
                         <p className="pt-4 text-xs">Admins</p>
