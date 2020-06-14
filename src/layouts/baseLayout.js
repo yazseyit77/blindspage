@@ -21,6 +21,7 @@ toast.configure({
 
 const logo = require("../images/logo.jpg")
 
+let styles = { borderLeft: "2px solid black" }
 class Layout extends React.Component {
   render() {
     const { children } = this.props
@@ -98,21 +99,21 @@ class Layout extends React.Component {
                 <footer className="flex justify-center">
                   <div className="flex w-fw px-8 desktop:px-0 border-solid border-t border-gray-300 items-center">
                     <span className="block text-blue-800 pt-4 pb-8 mt-2 text-xs">
-                      Copyright © 2020 Blinds. All rights reserved. |
+                      Copyright © 2020 Blinds.
                     </span>
                     <div
                       className="flex flex-1 flex-start;"
-                      style={{ paddingLeft: 5 }}
+                      style={{ paddingLeft: 15 }}
                     >
                       <Link to="/faq">
-                        <p className="pt-4 text-xs text-blue-600">FAQ | </p>
+                        <p className="pt-4 text-xs text-blue-600">FAQ </p>
                       </Link>
                       <Link to="/privacy">
                         <p
                           className="pt-4 text-xs text-blue-600"
-                          style={{ paddingLeft: 5 }}
+                          style={{ paddingLeft: 15 }}
                         >
-                          Privacy Policy
+                          PrivacyPolicy
                         </p>
                       </Link>
                     </div>
