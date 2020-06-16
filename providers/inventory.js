@@ -53,7 +53,7 @@ let inventory = [
   },
   {
     categories: ["Custom-Designed Shades"],
-    name: "Cotton finished , light-filtering shades",
+    name: "Cotton finished, light-filtering shades",
     price: "1600",
     image: "../images/cotton-finished-02.jpg",
     description:
@@ -72,7 +72,7 @@ let inventory = [
     currentInventory: 31,
   },
   {
-    categories: ["blinds"],
+    categories: ["blinds", "Custom-Designed Shades"],
     name: "Variegated Custom-Designed Zebra Blinds",
     price: "1200",
     image: "../images/variegated(1).jpg",
@@ -82,7 +82,7 @@ let inventory = [
     currentInventory: 7,
   },
   {
-    categories: ["blinds"],
+    categories: ["blinds", "Custom-Designed Shades"],
     name: "Wood Finished Custom-Designed Zebra Blinds",
     price: "1100",
     image: "../images/wood-finished-zebra-1.jpg",
@@ -92,7 +92,7 @@ let inventory = [
     currentInventory: 13,
   },
   {
-    categories: ["blinds"],
+    categories: ["blinds", "Custom-Designed Shades"],
     name: "Narrow Pleated Custom-Designed Zebra Blinds",
     price: "600",
     image: "../images/narrow-plated-zebra-4.jpg",
@@ -122,7 +122,7 @@ let inventory = [
     currentInventory: 9,
   },
   {
-    categories: ["blinds"],
+    categories: ["blinds", "Custom-Designed Shades"],
     name: "Custom Printed Blinds",
     price: "1230",
     image: "../images/custom-printed-blinds.jpg",

@@ -3,7 +3,7 @@ import React from "react"
 import SEO from "../components/seo"
 import { DisplaySmall } from "../components"
 import CartLink from "../components/CartLink"
-import { titleIfy, slugify } from "../../utils/helpers"
+import { slugify } from "../../utils/helpers"
 
 import { graphql } from "gatsby"
 

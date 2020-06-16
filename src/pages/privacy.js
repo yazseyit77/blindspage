@@ -14,7 +14,10 @@ class PrivacyPolicy extends React.Component {
             </h1>
             <br />
           </div>
-          <div className="px-32" style={{ textAlign: "justify" }}>
+          <div
+            className="sm:px-16 md:px-20 lg:px-24"
+            style={{ textAlign: "justify" }}
+          >
             <p>
               Protecting your private information is our priority. This
               Statement of Privacy applies to mer-ak.com and MerAk, LLC and
