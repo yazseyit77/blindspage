@@ -19,7 +19,7 @@ toast.configure({
   },
 })
 
-const logo = require("../images/logo.jpg")
+const logo = require("../images/logo.png")
 
 let styles = { borderLeft: "2px solid black" }
 class Layout extends React.Component {
