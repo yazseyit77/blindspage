@@ -149,17 +149,8 @@ class FAQ extends React.Component {
               moment measuring your window and your custom covering doesn’t fit
               just right, simply call Customer Care at 888-257-1840 with your
               corrected measurements and we’ll remake that exact same product
-              for you for free. All you do is pay a $10 shipping fee so we can
-              send your new blind or shade back to you. For more details, see
-              our{" "}
-              <a
-                className="text-blue-500"
-                href="https://www.selectblinds.com/satisfaction-guarantee.html"
-              >
-                {" "}
-                F.I.T. Guarantee
-              </a>{" "}
-              page.
+              for you for free. All you do is pay the shipping fee so we can
+              send your new blind or shade back to you.
             </p>
             <h3>
               HOW TO MEASURE:{" "}
@@ -223,7 +214,7 @@ class FAQ extends React.Component {
               order new ones. Use our{" "}
               <a
                 className="text-blue-500"
-                href="https://www.selectblinds.com/tech-tips/how-to-measure.html"
+                href="https://www.youtube.com/watch?v=71mg1KopnrY&feature=youtu.be"
               >
                 how to measure windows guide
               </a>{" "}
@@ -236,15 +227,115 @@ class FAQ extends React.Component {
               </strong>
             </p>
             <p>
-              Just follow the easy steps in our guide on{" "}
-              <a
-                className="text-blue-500"
-                href="https://www.selectblinds.com/tech-tips/2-on-1-headrail-measuring.html"
-              >
-                how to measure for installing two or three separate window
-                coverings in one window.
-              </a>
+              Just follow the easy steps in our guide:
+              <ul>
+                <li>
+                  Covering large windows can be a challenge. Sometimes windows
+                  are too large for one individual window blind, and hanging two
+                  blinds on the same or shared headrail is too much. What’s a
+                  DIYer to do?
+                </li>
+                <li>
+                  Try covering your window with two (or three) blinds. When you
+                  hang multiple blinds in the same window, each blind has its
+                  own headrail and is installed separately, so you can operate
+                  them individually.
+                </li>
+                <li>
+                  {" "}
+                  Here’s how to measure for two or more separate blinds in one
+                  window:{" "}
+                </li>
+                <li>
+                  <strong>
+                    For inside mounted wood, faux wood and mini blinds{" "}
+                  </strong>
+                  (Note: Factory deductions as shown below are taken on inside
+                  mounted treatments only. When hanging multiple outside mounted
+                  blinds, follow the same steps, but do not allow for any
+                  deductions; just measure and divide by the number of blinds.):
+                  <ol>
+                    <li>
+                      <strong>1. </strong>Measure the window in three places
+                      (top, middle, bottom), as shown in our measuring
+                      instructions.
+                    </li>
+                    <li>
+                      <strong>2. </strong>For two (2) separate blinds in one
+                      window, take the smallest width and divide it by 2. Then
+                      add 1/4" to the width of each blind. (The factory will
+                      deduct 1/2" from each blind.)
+                    </li>
+                    <li>
+                      <strong>Example: </strong>
+                      If your window measures 80" wide, calculate the width of
+                      each blind as follows: 80" ÷ 2 = 40"
+                    </li>
+                    <li>Then add 1/4" to the width of each blind:</li>
+                    <li>Blind 1 total width: 40" + ¼”= 40 ¼”</li>
+                    <li>Blind 2 total width: 40" + ¼”= 40 ¼”</li>
+                    <li>
+                      {" "}
+                      <strong>3. </strong>For three (3) blinds in one window,
+                      repeat the same steps.
+                    </li>
+                    <li>
+                      <strong>Example: </strong>If your window measures 90”
+                      wide, calculate the width of each blind as follows: 90" ÷
+                      3 = 30”
+                    </li>
+                    <li>
+                      Then add 1/4" to the width of the left and right blind. Do
+                      not add anything to the width of the middle blind:
+                    </li>
+                    <li>Left blind total width: 30” + ¼”= 30 ¼”</li>
+                    <li>Middle blind total width: 30”</li>
+                    <li>Right blind total width: 30” + ¼”= 30 ¼”</li>
+                  </ol>
+                </li>
+                <li>
+                  <strong>For inside mounted honeycomb shades </strong>(Note:
+                  Factory deductions as shown below are taken on inside mounted
+                  treatments only. When hanging multiple outside mounted blinds,
+                  follow the same steps below, but do not allow for any
+                  deductions; just measure and divide by the number of blinds.):
+                  <ol>
+                    <li>
+                      <strong>1. </strong>Measure the window in three places
+                      (top, middle, bottom), as shown in our measuring
+                      instructions.
+                    </li>
+                    <li>
+                      <strong>2. </strong>For two (2) separate blinds in one
+                      window, take the smallest width and divide it by 2. (The
+                      factory will deduct 1/8" - 1/4" from each blind.)
+                    </li>
+                    <li>
+                      <strong>Example: </strong>If your window measures 80"
+                      wide, calculate the width of each blind as follows: 80" ÷
+                      2 = 40" . This is what you will order
+                    </li>
+                    <li>
+                      <strong>3. </strong>For three (3) blinds in one window,
+                      repeat the same steps.
+                    </li>
+                    <li>
+                      <strong>Example: </strong>If your window measures 90”
+                      wide, calculate the width of each blind as follows: 90" ÷
+                      3 = 30”
+                    </li>
+                    <li>
+                      Then add 1/8” to the width of the left and right blind. Do
+                      not add anything to the width of the middle blind:
+                    </li>
+                    <li>Left blind total width: 30” + ⅛” = 30 ⅛”</li>
+                    <li>Middle blind total width: 30”</li>
+                    <li>Right blind total width: 30” + ⅛”= 30 ⅛”</li>
+                  </ol>
+                </li>
+              </ul>
             </p>
+            <br />
             <p>
               <strong>
                 Should I round up or down 1/8" on my window measurements?
@@ -297,59 +388,19 @@ class FAQ extends React.Component {
               products for far less than companies that charge for those
               services!) But don't worry; we're here to help if you need it! If
               you can hang a picture, you can hang your own window treatments.
-              No matter your skill level, we have the{" "}
-              <a
-                className="text-blue-500"
-                href="https://www.selectblinds.com/tech-tips.html"
-              >
-                tech tips
-              </a>
-              ,{" "}
-              <a
-                className="text-blue-500"
-                href="https://www.youtube.com/watch?v=71mg1KopnrY&feature=youtu.be"
-              >
-                how to measure videos
-              </a>{" "}
-              and{" "}
-              <a
-                className="text-blue-500"
-                href="https://www.selectblinds.com/install.html"
-              >
-                DIY installation guides
-              </a>{" "}
-              you need to measure and install any of our window treatments. (And
-              don't forget about our 'oops' policy; see Returns.) If you have
-              any questions or need assistance with measuring or installing any
-              of our products, you can always contact us by phone, email, or
-              Live Chat, too. If you decide to hire a contractor to measure
-              and/or install your coverings, please allow time to receive and
-              ensure your order is correct before they come to install them
-              (just in case there are any errors on either end). Also, please
-              note that SelectBlinds.com is not affiliated with any installation
-              service and is not responsible for any errors or fees associated
-              with third-party measuring and installation.
-            </p>
-            <p>
-              <strong>How do I measure for door blinds?</strong>
-            </p>
-            <p>
-              Click here to learn{" "}
-              <a
-                className="text-blue-500"
-                href="https://www.selectblinds.com/install.html"
-              >
-                how to measure doors
-              </a>{" "}
-              for window treatments, and then check out our recommendations for
-              coverings that are{" "}
-              <a
-                className="text-blue-500"
-                href="https://www.selectblinds.com/install.html"
-              >
-                best for doors
-              </a>
-              .
+              No matter your skill level, we have the tech tips how to measure
+              videos and DIY installation guides you need to measure and install
+              any of our window treatments. (And don't forget about our 'oops'
+              policy; see Returns.) If you have any questions or need assistance
+              with measuring or installing any of our products, you can always
+              contact us by phone, email, or Live Chat, too. If you decide to
+              hire a contractor to measure and/or install your coverings, please
+              allow time to receive and ensure your order is correct before they
+              come to install them (just in case there are any errors on either
+              end). Also, please note that SelectBlinds.com is not affiliated
+              with any installation service and is not responsible for any
+              errors or fees associated with third-party measuring and
+              installation.
             </p>
             <p>
               <strong>

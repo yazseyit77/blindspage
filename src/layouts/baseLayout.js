@@ -113,7 +113,7 @@ class Layout extends React.Component {
                           className="pt-4 text-xs text-blue-600"
                           style={{ paddingLeft: 15 }}
                         >
-                          PrivacyPolicy
+                          Privacy Policy
                         </p>
                       </Link>
                     </div>
